@@ -1,0 +1,13 @@
+schema{
+    query: Query
+}
+
+extend type Query{
+    companies:[Company]
+    company(id:ID):Company
+}
+
+type Company{
+    id : ID!
+    name : String
+}

@@ -1,0 +1,15 @@
+schema{
+    query: Query
+}
+
+type Query{
+    employees:[Emp]
+    employee(id:ID):Emp
+}
+
+type Emp{
+    id : ID!
+    name : String
+    age : Int
+    company: Company!
+}
